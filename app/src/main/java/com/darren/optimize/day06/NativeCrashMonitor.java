@@ -29,11 +29,6 @@ public class NativeCrashMonitor {
         }
     }
 
-    // Used to load the 'native-lib' library on application startup.
-    static {
-        System.loadLibrary("native-lib");
-    }
-
     private static volatile boolean isInit = false;
 
     public void init(CrashHandlerListener callback){
